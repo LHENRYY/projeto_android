@@ -8,10 +8,11 @@
 /*introduz a folha css uma fonte baixada */
 
 @font-face {
-    font-family:'Android';
-    src: url("./fontes/idroid.otf") format("opentype");
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
+
 
 /* determina variaves "--nome:codigo;"*/
 :root {
@@ -24,7 +25,7 @@
 
     --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
     --font-destaque: 'Bebas Neue', 'cursive';
-    --font-android: Android, 'cursive';
+    --font-android: 'Android', 'cursive';
 }
 /*configuraçao geral sem espaços*/
 *{
@@ -160,7 +161,7 @@ main > article{
     padding: 20px;
 }
 
-main> article > h1{
+ article > h1{
     font-family: var(--font-android);
     font-size: 1.6em;
     color: #053d05;
