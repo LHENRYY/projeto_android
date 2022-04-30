@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/*@import, importa uma fonte do site googlefontes */
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+
+
+
+/*introduz a folha css uma fonte baixada */
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf' ) format('opentype');
+    font-weight: normal;
+}
+
+/* determina variaves "--nome:codigo;"*/
+:root {
+    --cor0:#9cee9b;
+    --cor1:#21E61F;
+    --cor2:#67EA65;
+    --cor3:#1AB317;
+    --cor4:#148612;
+    --cor5:#053d05;
+
+    --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --font-destaque: 'Bebas Neue', 'cursive';
+    --font-android: 'Android', 'cursive';
+}
+/*configuraçao geral sem espaços*/
+*{
+    margin: 0;
+    padding: 0px ;
+}
+
+body{
+    /* cor do fundo  */
+    background-color: var(--cor0);
+    /* fonte usado*/
+    font-family: var(--font-padrao);
+}
+
+
+main  p {
+    /* espaço externo */
+    margin: 15px 0px;
+    /* Alinha o texto de modo que cada linha estenda-se da esquerda à direita do box. "alinhamento padrao ao meio"*/
+    text-align: justify;
+    /*espaço que os paragrafos tem no começo*/
+    text-indent: 35px;
+    /*tamanho da fonte*/
+    font-size: 1em;
+    /*espaço entre as linhas*/
+    line-height: 1em;
+
+}
+header{
+    /*degrader no cabeçalho */
+    background-image: linear-gradient(to bottom, var(--cor4),var(--cor5));
+    
+    background-color: var(--cor5);
+    
+    color: white;
+    /*altura minima do cabeçalho*/
+    min-height: 150px;
+    /*texto alinhado ao centro*/
+    text-align: center;
+    /*altura da borda para o conteudo da parte de cima */
+    padding-top: 35px;
+    /*sobra na boda*/
+    box-shadow: 0px 40px 20px black;
+
+}
+header > h1{
+    font-size: 3em;
+    font-family: var(--font-destaque);
+    color: white;
+    /*espaço entre a borda e a parte externa da parte de baixo*/
+    margin-bottom: 20px;
+    /*sombra do texto*/
+    text-shadow: 2px 2px 0px black;
+}
+header >p {
+
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.1em;
+    max-width: 600px;
+    /*espaço automatico da parte interna*/
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+
+nav{
+
+    background-color: var(--cor5);
+    padding: 10px;
+   
+}
+nav > a{
+    color: rgba(255, 255, 255, 0.808);
+    padding: 10px;
+    /*sem decoraçao, exemplo sem a linha padrao de link*/
+    text-decoration: none;
+    /*a largura da fonte*/
+    font-weight: bold;
+    /*arrendonda as bordas*/
+    border-radius: 5px;
+    /*duraçao do efeito */
+    transition-duration: 0.5s;
+
+}
+/* pseudo classes*/
+nav > a:hover{
+
+    /*cor do efeito pseudo*/
+    background-color: #1AB317;
+}
+main  {
+
+    background: white;
+    min-width: 280px;
+    max-width: 876px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+    border-radius: 0px 0px 15px 15px;
+    
+}
+main a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor3);
+    border-radius: 2px;
+    padding: 1px 6px ;
+}
+main a:hover{
+    
+    text-decoration: underline;
+    background-color: var(--cor1);
+
+
+
+}
+
+
+
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+
+main > article{
+
+    padding: 20px;
+}
+
+main> article > h1{
+    font-family: var(--font-android);
+    font-size: 1.6em;
+    color: #053d05;
+   
+}
+
+article > h2 {
+    font-family: var(--font-android);
+    color:var(--cor5);
+    font-size: 1.3em;
+    /*degrader com transparencia */
+    background-image:linear-gradient(to right,var(--cor2), transparent);
+    text-indent: 10px;
+   
+
+
+}
+main > img{
+    width: 100%;
+}
+.pequena{
+
+    width: 350px;
+    /*transforma em block*/
+    display: block;
+    margin: auto;
+}
+
+.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px ;
+    padding: 10px;
+    padding-bottom: 55%;
+    /*tira a posiçao natural do conteudo, determina q a posiçao sera de acordo com o geral*/
+    position: relative;
+}
+
+div.video > iframe{
+    /**/
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+}
+
+
+
+aside{
+    
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.616);
+
+
+
+
+}
+aside h3 {
+    
+    
+    background-color:var(--cor5);
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: lighter;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+    text-indent: 10px;
+    
+
+
+
+}
+aside > ul {
+    list-style-type: '\2714';
+    list-style: inside;
+    /*divide em colunas a lista*/
+    columns: 2;
+    
+
+
+}
+
+
+footer{
+    color: white;
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 5px;
+}
