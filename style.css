@@ -8,8 +8,8 @@
 /*introduz a folha css uma fonte baixada */
 
 @font-face {
-    font-family: 'Android';
-    src: url("./fontes/idroid.otf" ) format("opentype");
+    font-family:'Android';
+    src: url("./fontes/idroid.otf") format("opentype");
     font-weight: normal;
 }
 
@@ -24,7 +24,7 @@
 
     --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
     --font-destaque: 'Bebas Neue', 'cursive';
-    --font-android: 'Android', 'cursive';
+    --font-android: Android, 'cursive';
 }
 /*configuraçao geral sem espaços*/
 *{
